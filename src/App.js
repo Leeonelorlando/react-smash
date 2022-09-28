@@ -6,7 +6,6 @@ import Checkout from './components/Checkout/Checkout';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer';
 import Provider from './components/Context/Context';
-import Menu from './components/Home/Menu';
 import MenuContainer from './components/ItemDetailsContainer/MenuContainer';
 
 function App() {
