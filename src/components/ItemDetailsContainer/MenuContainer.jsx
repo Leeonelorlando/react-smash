@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Menu from "../Home/Menu";
-import Products from "../Products/Products";
 
 const MenuContainer = () => {
     return (
