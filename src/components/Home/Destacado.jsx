@@ -21,8 +21,7 @@ const Destacado = () => {
     </div>
 </div>
 </Link>
-</div>
-        
+</div>      
     )
 }
 
