@@ -6,14 +6,14 @@ import Success from "../Success/Success";
 const Checkout = () => {
     const {cart, clear, cartTotal, cartSuma} = useContext(CartContext);
     const [nombre, setNombre] = useState("");
-    const [email, setEmail] = useState("");
+    const [direccion, setDireccion] = useState("");
     const [telefono, setTelefono] = useState("");
     const [orderId, setOrderId] = useState("");
 
     const sendOrder = () => {
-        if ((nombre !== "") && (email !== "") && (telefono !== "")) {
+        if ((nombre !== "") && (direccion !== "") && (telefono !== "")) {
             //Creo el objeto con los Datos del Comprador
-            const buyer = {name:nombre, email:email, phone:telefono};
+            const buyer = {name:nombre, direccion:direccion, phone:telefono};
             //Creo el array de productos
             const items = [];
             cart.forEach(item => { //Recorro el array del Carrito y voy agregando los productos, en el array de productos que voy a subir al Firestore
@@ -44,8 +44,8 @@ const Checkout = () => {
                             <input type="text" class="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
+                            <label for="direccion" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="direccion" onInput={(e) => setDireccion(e.target.value)} />
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono</label>
