@@ -7,11 +7,15 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer';
 import Provider from './components/Context/Context';
 import MenuContainer from './components/ItemDetailsContainer/MenuContainer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Provider>
+       <div className="container-fluid fondo_amarillo">
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/category/:id"} element={<ItemListContainer />} />
@@ -20,7 +24,9 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
+      </div>
     </Provider>
   );
 }

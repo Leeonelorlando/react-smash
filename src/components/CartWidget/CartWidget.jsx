@@ -8,15 +8,14 @@ const CartWidget = () => {
 
     return (
         <div>
-            {(cartTotal() >= 0) ?
-            <Link to={"/cart"}>
-                <button type="button" className="btn fondo_naranja position-relative color_header" title="Ir al Carrito">
-                    <img src={carrito} alt="Carrito" />
-                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartTotal()}</span>
-                </button>
-            </Link> : ""}
-        </div>
-    )
+        <Link to={"/cart"}>
+            <button type="button" className="btn fondo_naranja position-relative color_header" title="Ir al Carrito">
+                <img src={carrito} alt="Carrito" />
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartTotal() > 0 ? cartTotal() : ""}</span>
+            </button>
+        </Link>
+    </div>
+)
 }
 
 export default CartWidget;

@@ -9,7 +9,7 @@ const NavBar = () => {
                 <NavLink className="nav-link active" aria-current="page" to={"/"}><img src={logo} width="100" alt="Smashed Babies" /></NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/category/id"}>Pedí tu Smash Burger</NavLink>
+                <NavLink className="nav-link link_header" to={"/category/hamburguesas"}>Pedí tu Smash Burger</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/menu"}>Menú</NavLink>

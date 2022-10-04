@@ -5,7 +5,7 @@ const Destacado = () => {
     return (
 
 <div className="container my-5">
-<Link to="/category/:id">
+<Link to="/category/hamburguesas">
 <div className="row">
 <div className="card-titulo tamaño text-center my-2">
             SELECCIONA CUALQUIER IMAGEN PARA VER LAS BURGUERS

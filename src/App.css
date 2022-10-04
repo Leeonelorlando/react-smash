@@ -21,6 +21,10 @@
   margin-bottom: 2rem;
 }
 
+.fondo_rojo {
+  background-color: #d72300;
+}
+
 .letra {
   font-family: 'Chicle', cursive;
 }
@@ -89,6 +93,22 @@ a:hover {
   width: 300px
 }
 
-p, h1, h3{
+p, h1, h3, td, button, a, label{
   color: aliceblue;
+}
+
+.subtitulo {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fondo_rosa {
+  background-color: #f1bfbf;
+}
+
+.fondo_rosa:hover {
+  color: rgb(10, 10, 10);
+  background-color: #d1d1d1;
 }
